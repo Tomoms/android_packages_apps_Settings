@@ -7796,6 +7796,7 @@
     <!-- Message for telling the user the kind of BT device being displayed in list. -->
     <string name="bluetooth_talkback_bluetooth">Bluetooth</string>
 
+<<<<<<< HEAD
     <!-- Wifi extension requirement -->
     <string name="wifi_set_priority_settings_title">AP priority settings</string>
     <string name="wifi_set_priority_settings_summary">Click to set priority of each access point</string>
@@ -7837,6 +7838,9 @@
     <string name="ssid_broadcast_dialog_title">Your HotSpot is not visible now</string>
     <string name="ssid_broadcast_dialog_text">If you switch the Broadcast Network Name (SSID) option off, your phone will not be visible to other devices and will not appear in the list of available Wi-Fi networks. Other devices can still connect to your HotSpot by entering its network name manually.</string>
 
+=======
+<<<<<<< HEAD
+>>>>>>> 11c9b682b7... Settings: Data usage based on Day/Week.
     <!-- Used as title on the automatic storage manager settings. [CHAR LIMIT=60] -->
     <string name="automatic_storage_manager_settings">Manage storage</string>
 
@@ -7972,4 +7976,8 @@
     <string name="camera_sounds_title">Camera shutter sound</string>
     <string name="camera_sounds_summary">Enable system camera shutter sound</string>
     <string name="camera_sound_warning_dialog_text">Disabling the camera shutter sound is illegal in some areas! Please check the applicable law in your country</string>
+
+    <!-- Daily WiFi stats -->
+    <string name="set_data_time_range">Show time range</string>
+
 </resources>
