@@ -79,6 +79,7 @@ public class AllowBindAppWidgetActivity extends AlertActivity implements
         finish();
     }
 
+    @Override
     protected void onPause() {
         if (isDestroyed() && !mClicked) {
             setResult(RESULT_CANCELED);
@@ -86,6 +87,7 @@ public class AllowBindAppWidgetActivity extends AlertActivity implements
         super.onDestroy();
     }
 
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
