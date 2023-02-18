@@ -27,4 +27,7 @@
     <!-- Title of preference to enable running in background [CHAR LIMIT=40] -->
     <string name="user_run_in_background">Allow running in background</string>
 
+    <string name="screenshot_timestamp_exif_title">Save screenshot timestamp to EXIF</string>
+    <string name="screenshot_timestamp_exif_summary">Enables adding a timestamp to screenshot EXIF metadata</string>
+
 </resources>
