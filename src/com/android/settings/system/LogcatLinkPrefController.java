@@ -8,7 +8,6 @@ import android.text.TextUtils;
 import androidx.preference.Preference;
 
 import com.android.settings.core.BasePreferenceController;
-import com.android.settings.ext.ExtSettingControllerHelper;
 
 public class LogcatLinkPrefController extends BasePreferenceController {
 
@@ -18,7 +17,7 @@ public class LogcatLinkPrefController extends BasePreferenceController {
 
     @Override
     public int getAvailabilityStatus() {
-        return ExtSettingControllerHelper.getGlobalSettingAvailability(mContext);
+        return AVAILABLE;
     }
 
     @Override
