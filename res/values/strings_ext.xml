@@ -100,4 +100,11 @@ Duress PIN works the same way duress password does."</string>
     <string name="duress_pwd_delete_error">Duress PIN and password were not deleted.\n\nDetails:\n%1$s</string>
     <string name="duress_pwd_error_dialog_dismiss">Dismiss</string>
 
+    <string name="ps_disallow_delayed_locking_title">End session immediately on lock</string>
+    <string name="ps_disallow_delayed_locking_description">
+        Disallow delayed locking of storage when stopping or locking the current private profile.
+        This allows locking to work like end session to full secondary users
+        where strong authentication is required to unlock the storage.
+    </string>
+
 </resources>
