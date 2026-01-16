@@ -312,4 +312,8 @@
 
     <!-- Default Timeouts -->
     <string name="custom_timeout_summary_1hour_def">1 hour (Default)</string>
+
+    <!-- Ignore window secure -->
+    <string name="ignore_window_secure_title">Ignore window secure flags</string>
+    <string name="ignore_window_secure_summary">Remove screenshot and screenrecord limits for all apps. This can be convenient in some cases but may lead to privacy leaks.</string>
 </resources>
