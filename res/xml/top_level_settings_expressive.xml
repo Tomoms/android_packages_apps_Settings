@@ -259,5 +259,9 @@
             settings:highlightableMenuKey="@string/menu_key_support"
             settings:controller="com.android.settings.support.SupportPreferenceController"/>
     </com.android.settingslib.widget.UntitledPreferenceCategory>
-</PreferenceScreen>
 
+    <com.android.settingslib.widget.UntitledPreferenceCategory
+        android:order="500"
+        android:key="top_level_account_category"/>
+
+</PreferenceScreen>
