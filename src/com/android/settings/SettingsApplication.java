@@ -109,6 +109,10 @@ public class SettingsApplication extends Application {
             ElapsedTimeUtils.assignSuwFinishedTimeStamp(getApplicationContext());
         }
 
+	if (getUserId() == android.os.UserHandle.USER_SYSTEM) {
+	    com.android.settings.users.UserRestrictions.fixupPrivateSpaceRestrictions(this);
+        }
+
         // Set Spa environment.
         setSpaEnvironment();
 
