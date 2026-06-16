@@ -115,4 +115,6 @@ Duress PIN works the same way duress password does."</string>
     <string name="geocoder_enabled_openstreetmap_server">OpenStreetMap server</string>
     <string name="geocoder_disabled">Off</string>
 
+    <string name="exploit_protection_title">Exploit protection</string>
+    <string name="exploit_protection_summary">Device and app security improvements</string>
 </resources>
