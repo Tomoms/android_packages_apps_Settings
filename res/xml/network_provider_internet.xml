@@ -126,4 +126,10 @@
         android:order="30"
         settings:controller="com.android.settings.network.ConnectivityChecksPrefController"/>
 
+    <Preference
+        android:key="cert_transparency_dl"
+        android:title="@string/cert_transparency_dl_title"
+        android:order="31"
+        settings:controller="com.android.settings.network.CertTransparencyDownloaderPrefController"/>
+
 </PreferenceScreen>
