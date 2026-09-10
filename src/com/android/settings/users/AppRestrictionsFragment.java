@@ -455,6 +455,8 @@ public class AppRestrictionsFragment extends SettingsPreferenceFragment implemen
                 return getString(R.string.app_sees_restricted_accounts_and_controlled_by,
                         app.primaryEntry.activityName);
             }
+	    Log.w(TAG, "TOMMASO pi = " + pi);
+	    Log.w(TAG, "TOMMASO app = " + app);
             return getString(R.string.user_restrictions_controlled_by,
                     app.primaryEntry.activityName);
         } else if (pi.restrictedAccountType != null) {
