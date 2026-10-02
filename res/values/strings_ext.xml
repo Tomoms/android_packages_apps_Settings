@@ -23,11 +23,4 @@
     <!-- Title of preference to enable running in background [CHAR LIMIT=40] -->
     <string name="user_run_in_background">Allow running in background</string>
 
-    <string name="ps_disallow_delayed_locking_title">End session immediately on lock</string>
-    <string name="ps_disallow_delayed_locking_description">
-        Disallow delayed locking of storage when stopping or locking the current private profile.
-        This allows locking to work like end session to full secondary users
-        where strong authentication is required to unlock the storage.
-    </string>
-
 </resources>
