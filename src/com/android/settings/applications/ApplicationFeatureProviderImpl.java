@@ -220,20 +220,6 @@ public class ApplicationFeatureProviderImpl implements ApplicationFeatureProvide
                 // Replacing WebView is not supported
                 "app.vanadium.webview",
 
-                // Only bundled camera can handle some of camera intents
-                "app.grapheneos.camera",
-
-                // Disabling GmsCompat app breaks the GmsCompat layer
-                com.android.internal.gmscompat.GmsCompatApp.PKG_NAME,
-
-                // EuiccSupportPixel handles firmware updates of embedded secure element that is
-                // used for eSIM, NFC, Felica etc
-                PackageId.EUICC_SUPPORT_PIXEL_NAME,
-
-                // CameraX extensions break when it's disabled, which breaks apps that use the
-                // CameraX library
-                PackageId.PIXEL_CAMERA_SERVICES_NAME,
-
                 // Emergency calls break when it's disabled, system dialer app is required for it.
                 "com.android.dialer",
         });
