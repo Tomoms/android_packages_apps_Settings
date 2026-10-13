@@ -472,17 +472,7 @@ public class UserDetailsSettings extends SettingsPreferenceFragment
             }
         }
 
-        final boolean isAdminUser = mUserManager.isAdminUser();
-        final boolean isFullUser = isAdminUser
-                || mUserManager.isUserOfType(UserManager.USER_TYPE_FULL_SECONDARY)
-                || mUserManager.isUserOfType(UserManager.USER_TYPE_FULL_SYSTEM);
-        if (isFullUser && mUserInfo.isManagedProfile()) {
-            removePreference(KEY_ENABLE_TELEPHONY_CALLING);
-            removePreference(KEY_SWITCH_USER);
-            openAppAndContentAccessScreen(false);
-            finishFragment();
-        }
-        if (isAdminUser || canRemoveSelf()) {
+        if (mUserManager.isAdminUser() || canRemoveSelf()) {
             if (mUserInfo.isGuest()) {
                 mRemoveUserPref.setTitle(
                         mGuestUserAutoCreated
@@ -499,7 +489,7 @@ public class UserDetailsSettings extends SettingsPreferenceFragment
             removePreference(KEY_REMOVE_USER);
         }
 
-        if (!isAdminUser) { // not allow calls for non admin users.
+        if (!mUserManager.isAdminUser()) { // not allow calls for non admin users.
             removePreference(KEY_ENABLE_TELEPHONY_CALLING);
             removePreference(KEY_APP_AND_CONTENT_ACCESS);
             removePreference(KEY_APP_COPYING);
